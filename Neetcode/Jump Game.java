@@ -1,4 +1,14 @@
 class Solution {
+
+    public boolean canJumpSimplified(int[] nums) {
+       int reachable = 0;
+       for(int i = 0; i < nums.length; i ++) {
+           if(i > reachable) return false;
+           reachable = Math.max(reachable, i + nums[i]);
+       } 
+       return true;
+    }
+    
     public boolean canJump(int[] nums) {
 
 
