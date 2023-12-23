@@ -21,6 +21,11 @@ class Solution {
                 ans.add(c);
                 c = 1;
             }
+            if(curr_limit == s.length()-1) {
+
+                c += s.length()-1 - i;
+                break;
+                };
 
         }
         ans.add(c);
