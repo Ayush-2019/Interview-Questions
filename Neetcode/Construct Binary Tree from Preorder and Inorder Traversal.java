@@ -17,7 +17,7 @@ class Solution {
 
     public TreeNode solve(Map<Integer, Integer> map, int[] pre, int[] in, int preIndex, int inStart, int inEnd){
 
-        if(inStart > inEnd) return null;
+        if(preIndex >= pre.length || inStart > inEnd) return null;
 
         TreeNode node = new TreeNode(pre[preIndex]);
 
