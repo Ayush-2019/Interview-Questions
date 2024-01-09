@@ -1,5 +1,5 @@
 class Solution {
-
+    // TC will be n*m*^wordLength
     public boolean solve(char[][] board, String word, int index, int i, int j, boolean[][] vis){
 
         if(index == word.length()) return true;
